@@ -1,8 +1,13 @@
+:root {
+    --main-color: #d3ad7f;
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", serif;
+    text-transform: capitalize;
+    transition: 0.2s linear;
 }
 
 body {
@@ -86,7 +91,7 @@ header a:active {
     margin-top: 1rem;
     display: inline-block;
     border-radius: 5px;
-    background: rgb(222,184,135);
+    background: var --main-color;
 }
 
 .homeContainer {
