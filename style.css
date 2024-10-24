@@ -1,5 +1,6 @@
 :root {
     --main-color: #d3ad7f;
+}
 
 * {
     margin: 0;
@@ -55,6 +56,12 @@ header a:active {
     text-decoration: 2px underline wavy rgba(255,215,0);
 } */
 
+main {
+    width: 90%;
+    display: inline-block;
+    padding-left: 105px;
+}
+
 .shopping {
     border: none;
     background-color: black;
@@ -91,14 +98,29 @@ header a:active {
     margin-top: 1rem;
     display: inline-block;
     border-radius: 5px;
-    background: var --main-color;
+    background: var(--main-color);
+}
+
+.btn:hover {
+    opacity: 0.8;
+    transition: 1s linear;
+    color: #ffffff;
+    padding: 16px;
+}
+
+.btn:active {
+    cursor: grab;
+    font-size: 15px;
+    opacity: 1;
 }
 
 .homeContainer {
-    background-image: url(./img/home-img.jpg);
-    background-size: cover;
+    background: url(./img/home-img.jpg);
+    background-size: 95%;
     background-position: center;
     height: 100vh;
+    border: none;
+    background-repeat: no-repeat;
 }
 
 .homeContainer section {
