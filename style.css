@@ -43,7 +43,7 @@ header a {
 
 header a:hover {
     cursor: pointer;
-    text-decoration: 2px underline wavy rgba(255,215,0);
+    text-decoration: 2px underline rgba(255,215,0);
 }
 
 header a:active {
@@ -149,4 +149,36 @@ main {
     line-height: 30px;
     padding: 1rem 0;
     letter-spacing: 1px;
+}
+
+#about {
+    margin-top: 50px;
+}
+
+#about h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+
+#about span {
+    color: var(--main-color);
+}
+
+#about div {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.about {
+    display: inline-block;
+    width: 500px;
+}
+
+#about section {
+    background: rgb(54, 54, 54);
+    display: inline-block;
+    width: 500px;
 }
