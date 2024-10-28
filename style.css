@@ -9,6 +9,8 @@
     font-family: "Roboto", serif;
     text-transform: capitalize;
     transition: 0.2s linear;
+    outline: none;
+    text-decoration: none;
 }
 
 body {
@@ -57,9 +59,9 @@ header a:active {
 } */
 
 main {
-    width: 90%;
+    width: 100%;
     display: inline-block;
-    padding-left: 105px;
+    padding-top: 40px;
 }
 
 .shopping {
@@ -100,6 +102,8 @@ main {
     display: inline-block;
     border-radius: 5px;
     background: var(--main-color);
+    color: #fff;
+    font-weight: 500;
 }
 
 .btn:hover {
@@ -117,7 +121,7 @@ main {
 
 .homeContainer {
     background: url(./img/home-img.jpg);
-    background-size: 95%;
+    background-size: 90%;
     background-position: center;
     height: 100vh;
     border: none;
@@ -173,13 +177,34 @@ main {
     margin-top: 25px;
 }
 
-.about {
+.aboutImg {
     display: inline-block;
-    width: 500px;
+    width: 550px;
 }
 
 #about section {
-    background: rgb(54, 54, 54);
+    background: rgb(28, 28, 28);
     display: inline-block;
-    width: 500px;
+    width: 550px;
+}
+
+
+.about section {
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+
+.about h2 {
+    color: #fff;
+    font-size: 27px;
+    margin-top: 15px;
+    font-weight: 800;
+}
+
+.about p {
+    color: #fff;
+    margin: 15px 0;
+    font-size: 15px;
+    line-height: 26px;
 }
