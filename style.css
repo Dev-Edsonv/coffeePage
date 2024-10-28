@@ -1,7 +1,7 @@
 :root {
     --main-color: #d3ad7f;
+    --border: 2px solid #a9a9a9;
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -109,7 +109,7 @@ main {
 }
 
 .btn:hover {
-   letter-spacing: 0.1rem;
+    letter-spacing: 0.1rem;
 }
 
 .btn:active {
@@ -150,9 +150,9 @@ main {
     color: #fff;
     font-size: 21px;
     font-weight: 100;
-    line-height: 30px;
+    line-height: 1.5;
     padding: 1rem 0;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 #about {
@@ -218,7 +218,7 @@ main {
 
 .menu .boxContainer .side {
     text-align: center;
-    border: 2px solid #a9a9a9;
+    border: var(--border);
     padding: 3.5rem;
     margin-top: 40px;
     cursor: pointer;
@@ -252,15 +252,64 @@ main {
 .menu .boxContainer .side:hover {
     background: #fff;
     cursor: grab;
+    border-color: gold;
 }
 
 .menu .boxContainer .side:hover>* {
-    color: #000;   
+    color: #000;
 }
 
-.addres iframe {
+.reviews .box {
+    display: flex;
+    justify-content: center;
+
+}
+
+.reviews .box .customers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 0));
+    place-items: center;
+    border: var(--border);
+    margin-right: 25px;
+    margin-top: 30px;
+}
+
+/* .reviews .box .customers {
+    display: inline-block;
+    width: 330px;
+    border: var(--border);
+    margin-right: 30px;
+} */
+
+.reviews .box .customers .quote {
+    width: 35px;
+    margin-top: 25px;
+}
+
+.reviews .box .customers p {
+    color: #fff;
+    width: 320px;
+    line-height: 1.6;
+    font-size: 13px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.reviews .box .customers .appraiser {
+    width: 85px;
+    border-radius: 100%;
+}
+
+.reviews .box .customers h3 {
+    color: #fff;
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+/* .addres iframe {
     display: block;
     margin: 36px auto;
     width: 710px;
     height: 710px;
-}
+} */
