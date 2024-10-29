@@ -2,6 +2,7 @@
     --main-color: #d3ad7f;
     --border: 2px solid #a9a9a9;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -341,21 +342,33 @@ main {
 
 @media (max-width: 792px) {
 
-    header div a {
+    header {
+        justify-content: flex-start;
+    }
+
+    #logo {
+        margin-left: 55px;
+    }
+
+    .links {
         position: absolute;
-        top: 82px;
-        right: 95px;
+        top: 40px;
+        right: 120px;
         overflow: hidden;
         transition: all 1.5s ease-in-out;
+        display: flex;
+    }
+
+    .links a {
         display: block;
-        font-size: 10px;
+        font-size: 13px;
         margin-top: 10px;
         margin-left: 20px;
     }
 
     header div button {
         display: none;
-    } 
+    }
 
     .menuButton {
         display: block;
@@ -365,5 +378,7 @@ main {
         transition: all 0.5s ease-in-out;
         background-color: #fff;
         border-radius: 15px;
+        position: absolute;
+        right: 90px;
     }
 }
