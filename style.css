@@ -448,6 +448,11 @@ main {
     }
 
     .title {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .about h2 {
         font-size: 16px;
         margin-top: 10px;
         text-align: left;
@@ -463,18 +468,49 @@ main {
         font-size: 11px;
     }
 
-    .menu h2 {
-        font-size: 25px;
-        text-align: center;
-    }
-
     .menu .boxContainer {
         padding: 0;
         width: 50vw;
         display: grid;
     }
 
-    .menu .boxContainer .side {
+    .reviews .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .reviews .box .customers {
+        display: block;
+        width: 340px;
+    }
+
+    .reviews .box .customers .quote {
+        display: block;
+        margin: 25px auto 0;
+    }
+
+    .reviews .box .customers p {
+        display: block;
+        margin: 18px auto;
+    }
+
+    .reviews .box .customers .appraiser {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .reviews .box .customers h3 {
+        text-align: center;
+    }
+
+    .stars {
+        display: flex;
+        justify-content: center;
+    }
+
+    .addres iframe {
+        width: 355px;
+        height: 355px;
     }
 }
