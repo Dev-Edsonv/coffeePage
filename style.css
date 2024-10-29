@@ -344,15 +344,18 @@ main {
 
     header {
         justify-content: flex-start;
+        width: 100vw;
+        height: 70px;
     }
 
     #logo {
         margin-left: 55px;
+        width: 54px;
     }
 
     .links {
         position: absolute;
-        top: 40px;
+        top: 18px;
         right: 120px;
         overflow: hidden;
         transition: all 1.5s ease-in-out;
@@ -372,7 +375,7 @@ main {
 
     .menuButton {
         display: block;
-        width: 35px;
+        width: 30px;
         padding: 5px;
         margin-left: 120px;
         transition: all 0.5s ease-in-out;
@@ -380,5 +383,39 @@ main {
         border-radius: 15px;
         position: absolute;
         right: 90px;
+    }
+
+    .homeContainer {
+        height: 50vh;
+        display: block;
+        padding-top: 100px;
+    }
+    }
+
+    .homeContainer section {
+        display: block;
+        min-height: 50vh;
+        margin-left: 0;
+    }
+
+    .container {
+        max-width: 250px;
+    }
+
+    .container h1 {
+        font-size: 25px;
+        line-height: 1.8;
+        width: 250px;
+    }
+
+    .btn {
+        font-size: 12px;
+    padding: 0.8rem 1.5rem;
+    }
+
+    .container p {
+        font-size: 10px;
+        line-height: 1.5;
+        font-weight: 400;
     }
 }
