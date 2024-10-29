@@ -419,4 +419,8 @@ main {
         line-height: 1.8;
         font-weight: 400;
     }
+
+    main {
+        display: none;
+    }
 }
