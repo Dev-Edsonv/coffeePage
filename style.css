@@ -55,6 +55,10 @@ header a:active {
     opacity: 0.4;
 }
 
+.menuButton {
+    display: none;
+}
+
 /* header a:visited {
     cursor: pointer;
     text-decoration: 2px underline wavy rgba(255,215,0);
@@ -272,14 +276,8 @@ main {
     border: var(--border);
     margin-right: 25px;
     margin-top: 30px;
+    padding-bottom: 25px;
 }
-
-/* .reviews .box .customers {
-    display: inline-block;
-    width: 330px;
-    border: var(--border);
-    margin-right: 30px;
-} */
 
 .reviews .box .customers .quote {
     width: 35px;
@@ -307,9 +305,65 @@ main {
     margin: 10px 0;
 }
 
-/* .addres iframe {
+.addres {
+    padding-bottom: 30px;
+}
+
+.addres iframe {
     display: block;
     margin: 36px auto;
     width: 710px;
     height: 710px;
-} */
+}
+
+#contacts {
+    display: flex;
+    justify-content: center;
+}
+
+#contacts a {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#contacts a:hover {
+    background-color: var(--main-color);
+    width: 60px;
+    text-align: center;
+    padding-top: 3px;
+    border-radius: 8px;
+}
+
+#contacts a:active {
+    opacity: 0.6;
+    cursor: grab;
+}
+
+@media (max-width: 792px) {
+
+    header div a {
+        position: absolute;
+        top: 82px;
+        right: 95px;
+        overflow: hidden;
+        transition: all 1.5s ease-in-out;
+        display: block;
+        font-size: 10px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    header div button {
+        display: none;
+    } 
+
+    .menuButton {
+        display: block;
+        width: 35px;
+        padding: 5px;
+        margin-left: 120px;
+        transition: all 0.5s ease-in-out;
+        background-color: #fff;
+        border-radius: 15px;
+    }
+}
