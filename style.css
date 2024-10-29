@@ -340,22 +340,22 @@ main {
     cursor: grab;
 }
 
-@media (max-width: 1090px) {
+@media (max-width: 490px) {
 
     header {
         justify-content: flex-start;
-        height: 70px;
-        width: 370px;
+        height: 80px;
+        width: 100%;
     }
 
     #logo {
-        margin-left: 30px;
+        margin-left: 55px;
         width: 40px;
     }
 
     .links {
         position: absolute;
-        top: 24px;
+        top: 29px;
         right: 43px;
         overflow: hidden;
         transition: all 1.5s ease-in-out;
@@ -363,7 +363,7 @@ main {
     }
 
     .links a {
-        font-size: 10px;
+        font-size: 12px;
         display: inline-block;
         margin-right: 6px;
     }
@@ -374,7 +374,7 @@ main {
 
     .menuButton {
         display: block;
-        width: 25px;
+        width: 28px;
         padding: 5px;
         transition: all 0.5s ease-in-out;
         background-color: #fff;
@@ -384,11 +384,10 @@ main {
     }
 
     .homeContainer {
-        height: 44vh;
-        display: inline-block;
+        height: 50vh;
         padding-top: 100px;
-        background-size: contain;
-        width: 428px;
+        background-size: cover;
+        width: 100%;
         background-position: center;
     }
 
@@ -399,35 +398,27 @@ main {
     }
 
     .container {
-        max-width: 200px;
+        max-width: 250px;
     }
 
     .container h1 {
-        font-size: 13px;
-        line-height: 1.4;
+        font-size: 17px;
+        line-height: 1.8;
         width: 160px;
     }
 
     .btn {
-        padding: 0;
-        display: block;
-        font-size: 8px;
-        width: 91px;
-        height: 18px;
-        text-align: center;
-        padding-top: 3px;
-        margin-top: 0;
-        font-weight: 200;
+        font-size: 12px;
+        display: inline-block;
+        padding: 1rem 1.3rem;
     }
 
     .container p {
-        font-size: 7px;
-        line-height: 1.8;
-        font-weight: 100;
-    }
-
-    main {
-        display: none;
+        font-size: 12px;
+        width: 80vw;
+        font-weight: 400;
+        padding: 0;
+        margin: 10px 0;
     }
 
     #about {
@@ -436,13 +427,14 @@ main {
     }
 
     #about div {
-        display: block;
+        display: flex;
         margin-top: 15px;
+        justify-content: center;
     }
 
     #about h1 {
-        font-size: 18px;
-        text-align: left;
+        font-size: 25px;
+        text-align: center;
     }
 
     .aboutImg {
@@ -450,20 +442,20 @@ main {
     }
 
     #about section {
-        width: 50vw;
+        width: 60vw;
         display: block;
         padding-bottom: 9px;
     }
 
     .title {
-        font-size: 12px;
+        font-size: 16px;
         margin-top: 10px;
         text-align: left;
     }
 
-    .title span {
+    /* .title span {
 
-    } 
+    }  */
 
 
     .about section {
@@ -473,6 +465,6 @@ main {
     }
 
     .about p {
-        font-size: 6px;
+        font-size: 11px;
     }
 }
